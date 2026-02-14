@@ -91,3 +91,6 @@ typings/
 .vs/
 *.sqlite
 *.db
+
+# Angular cache
+.angular/
