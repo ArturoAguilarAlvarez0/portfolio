@@ -1,0 +1,118 @@
+:host {
+    width: 320px;
+    display: block;
+}
+
+.sidebar {
+    width: 320px;
+    height: 100%;
+    padding: 50px 30px;
+    background: #1c2029;
+    border-right: 1px solid #2a2f3a;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Perfil */
+.profile {
+    text-align: center;
+}
+
+.profile img {
+    width: 120px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.profile h2 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.profile span {
+    font-size: 14px;
+    color: #9aa3b2;
+}
+
+/* Info contacto */
+.contact {
+    margin-top: 40px;
+}
+
+.contact p {
+    font-size: 14px;
+    color: #b8c0d1;
+    margin-bottom: 10px;
+}
+
+.name {
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.role-badge {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 6px 14px;
+    font-size: 13px;
+    color: #d1d5db;
+    background: #2a2f3a;
+    border: 1px solid #3b82f6;
+    border-radius: 20px;
+}
+
+.divider {
+    width: 60%;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #3b82f6, transparent);
+    margin: 25px auto 0 auto;
+}
+
+
+.menu {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.menu button {
+    background: transparent;
+    border: none;
+    text-align: left;
+    padding: 12px 18px;
+    border-radius: 8px;
+    color: #9aa4b2;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.25s ease;
+}
+
+/* Hover */
+.menu button:hover {
+    background: rgba(255, 255, 255, 0.05);
+    color: #ffffff;
+    transform: translateX(4px);
+}
+
+/* Active */
+.menu button.active {
+    color: #ffcc4d;
+    background: rgba(78, 161, 255, 0.08);
+}
+
+/* Barra lateral activa */
+.menu button.active::before {
+    content: "";
+    position: absolute;
+    left: -12px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 60%;
+    width: 4px;
+    border-radius: 4px;
+    background: linear-gradient(180deg, #4ea1ff, #7c4dff);
+}

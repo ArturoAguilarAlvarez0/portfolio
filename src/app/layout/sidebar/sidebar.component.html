@@ -1,0 +1,19 @@
+<div class="sidebar">
+    <div class="profile">
+        <img src="https://github.com/ArturoAguilarAlvarez0/icons/blob/main/icons/pizza2.jpg?raw=true" alt="Profile">
+        <h2 class="name">Arturo Aguilar</h2>
+
+        <div class="role-badge">
+            Full-Stack Software Developer
+        </div>
+
+        <div class="divider"></div>
+    </div>
+
+    <nav class="menu">
+        <button *ngFor="let section of sections" (click)="select(section)" [class.active]="activeSection === section">
+            {{ section | titlecase }}
+        </button>
+    </nav>
+
+</div>

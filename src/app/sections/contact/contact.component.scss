@@ -1,0 +1,169 @@
+/* ============================= */
+/* CONTAINER */
+/* ============================= */
+
+.contact-container {
+    margin-top: 40px;
+}
+
+/* ============================= */
+/* TITLE (reutiliza si ya está global) */
+/* ============================= */
+
+.section-title {
+    font-size: 34px;
+    font-weight: 700;
+    margin: 0;
+    color: #e6e8ee;
+}
+
+.section-title span {
+    color: #f5c451;
+}
+
+.section-underline {
+    width: 40px;
+    height: 4px;
+    background: #f5c451;
+    border-radius: 4px;
+    margin: 14px 0 35px;
+}
+
+/* ============================= */
+/* LAYOUT */
+/* ============================= */
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: 2.2fr 1fr;
+    gap: 50px;
+}
+
+/* ============================= */
+/* FORM SIDE */
+/* ============================= */
+
+.form-card {
+    background: linear-gradient(160deg, #1f2430, #1b2029);
+    border: 1px solid #2f3644;
+    border-radius: 24px;
+    padding: 50px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.row {
+    display: flex;
+    gap: 20px;
+}
+
+.row input {
+    flex: 1;
+}
+
+input,
+textarea {
+    background: #1c2029;
+    border: 1px solid #2a2f3a;
+    border-radius: 16px;
+    padding: 18px 20px;
+    color: #e6e8ee;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s ease;
+    width: 100%;
+}
+
+textarea {
+    min-height: 200px;
+    resize: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #8a93a3;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #f5c451;
+    box-shadow: 0 0 0 3px rgba(245, 196, 81, 0.1);
+}
+
+/* BUTTON */
+
+.button-wrapper {
+    margin-top: 10px;
+}
+
+button {
+    width: 180px;
+    padding: 15px 22px;
+    background: linear-gradient(145deg, #1f2430, #181c24);
+    border: 1px solid #2a2f3a;
+    border-radius: 14px;
+    color: #f5c451;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    border-color: #f5c451;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.45);
+    transform: translateY(-3px);
+}
+
+/* ============================= */
+/* RIGHT INFO PANEL */
+/* ============================= */
+
+.contact-info {
+    background: linear-gradient(160deg, #1f2430, #1b2029);
+    border: 1px solid #2f3644;
+    border-radius: 24px;
+    padding: 40px;
+}
+
+.contact-info h4 {
+    color: #f5c451;
+    margin-bottom: 18px;
+}
+
+.contact-info p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #9aa4b2;
+    margin-bottom: 25px;
+}
+
+.info-item {
+    margin-bottom: 12px;
+    font-size: 14px;
+    color: #c3c9d4;
+}
+
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 900px) {
+
+    .contact-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+
+}

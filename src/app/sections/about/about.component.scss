@@ -1,0 +1,113 @@
+:host {
+    flex: 1;
+    display: flex;
+}
+
+.about-container {
+    flex: 1;
+    display: flex;
+    animation: fadeUp 0.7s ease forwards;
+}
+
+.section-card {
+    flex: 1;
+
+    .section-title {
+        font-size: 34px;
+        font-weight: 700;
+        margin-bottom: 12px;
+    }
+
+    .section-title span {
+        color: #f5c451;
+    }
+
+    .about-text p {
+        color: #bfc6d1;
+        line-height: 1.7;
+        font-size: 15px;
+        margin-bottom: 18px;
+    }
+
+    .about-stats {
+        display: flex;
+        gap: 40px;
+        margin-top: 30px;
+    }
+
+    .about-stats h3 {
+        color: #f5c451;
+        font-size: 22px;
+    }
+
+    .about-stats p {
+        font-size: 13px;
+        color: #9aa4b2;
+    }
+
+
+    .section-subtitle {
+        font-size: 22px;
+        margin: 40px 0 20px;
+        font-weight: 600;
+    }
+
+    .services-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    .service-card {
+        display: flex;
+        gap: 20px;
+        padding: 25px;
+        border-radius: 16px;
+        background: linear-gradient(145deg, #1f2430, #1a1e27);
+        border: 1px solid #2a2f3a;
+        transition: all 0.3s ease;
+    }
+
+    .service-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+        border-color: #f5c451;
+    }
+
+    .service-card h4 {
+        margin: 0 0 8px;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .service-card p {
+        margin: 0;
+        font-size: 14px;
+        color: #9aa4b2;
+        line-height: 1.6;
+    }
+
+    .icon {
+        font-size: 28px;
+        color: #f5c451;
+    }
+
+    .about-text p {
+        font-size: 15.5px;
+        line-height: 1.8;
+        /* 👈 más aire */
+        color: #c3c9d4;
+        /* 👈 menos blanco puro */
+        margin-bottom: 18px;
+        letter-spacing: 0.3px;
+    }
+
+    .highlight {
+        color: #f5c451;
+        font-weight: 600;
+    }
+
+    .about-text {
+        animation: fadeUp 0.6s ease forwards;
+    }
+}

@@ -1,0 +1,205 @@
+/* ===== Section Title (opcional) ===== */
+.section-title {
+    font-size: 26px;
+    font-weight: 700;
+    margin: 0 0 18px;
+    color: #e6e8ee;
+}
+
+.section-title span {
+    color: #f5c451;
+}
+
+/* ===== Timeline Wrapper ===== */
+.timeline {
+    position: relative;
+    margin-top: 26px;
+
+    /* espacio para que la línea + puntos no choquen con el texto */
+    padding-left: 64px;
+}
+
+/* Línea vertical */
+.timeline::before {
+    content: "";
+    position: absolute;
+
+    /* eje X de la línea */
+    left: 26px;
+
+    /* para que no se pegue al borde arriba/abajo */
+    top: 6px;
+    bottom: 6px;
+
+    width: 2px;
+    background: #2a2f3a;
+    border-radius: 2px;
+}
+
+/* Cada item */
+.timeline-item {
+    position: relative;
+    padding: 2px 0 0;
+    /* pequeño ajuste visual */
+    margin-bottom: 46px;
+}
+
+/* El último sin espacio extra */
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+/* Punto (centrado EXACTO sobre la línea) */
+.timeline-dot {
+    position: absolute;
+
+    /* Centro del punto = 26px (la línea) */
+    left: 26px;
+
+    /* Ajusta la altura del punto respecto al título */
+    top: 8px;
+
+    width: 14px;
+    height: 14px;
+
+    /* para que left sea el centro del círculo */
+    transform: translateX(-50%);
+
+    background: #f5c451;
+    border-radius: 50%;
+
+    /* anillo y glow suave */
+    box-shadow:
+        0 0 0 4px rgba(245, 196, 81, 0.10),
+        0 0 12px rgba(245, 196, 81, 0.45);
+}
+
+/* Contenido */
+.timeline-content h4 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 650;
+    color: #e6e8ee;
+}
+
+.timeline-date {
+    display: block;
+    margin: 8px 0 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #f5c451;
+}
+
+.timeline-content p {
+    margin: 0;
+    font-size: 14.5px;
+    line-height: 1.7;
+    color: #9aa4b2;
+    max-width: 820px;
+    /* opcional: limita ancho para lectura */
+}
+
+/* ===== Section Title (opcional) ===== */
+.section-title {
+    font-size: 26px;
+    font-weight: 700;
+    margin: 0 0 18px;
+    color: #e6e8ee;
+}
+
+.section-title span {
+    color: #f5c451;
+}
+
+/* ===== Timeline Wrapper ===== */
+.timeline {
+    position: relative;
+    margin-top: 26px;
+
+    /* espacio para que la línea + puntos no choquen con el texto */
+    padding-left: 64px;
+}
+
+/* Línea vertical */
+.timeline::before {
+    content: "";
+    position: absolute;
+
+    /* eje X de la línea */
+    left: 26px;
+
+    /* para que no se pegue al borde arriba/abajo */
+    top: 6px;
+    bottom: 6px;
+
+    width: 2px;
+    background: #2a2f3a;
+    border-radius: 2px;
+}
+
+/* Cada item */
+.timeline-item {
+    position: relative;
+    padding: 2px 0 0;
+    /* pequeño ajuste visual */
+    margin-bottom: 46px;
+}
+
+/* El último sin espacio extra */
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+/* Punto (centrado EXACTO sobre la línea) */
+.timeline-dot {
+    position: absolute;
+
+    /* Centro del punto = 26px (la línea) */
+    left: 26px;
+
+    /* Ajusta la altura del punto respecto al título */
+    top: 8px;
+
+    width: 14px;
+    height: 14px;
+
+    /* para que left sea el centro del círculo */
+    transform: translateX(-50%);
+
+    background: #f5c451;
+    border-radius: 50%;
+
+    /* anillo y glow suave */
+    box-shadow:
+        0 0 0 4px rgba(245, 196, 81, 0.10),
+        0 0 12px rgba(245, 196, 81, 0.45);
+}
+
+/* Contenido */
+.timeline-content h4 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 650;
+    color: #e6e8ee;
+}
+
+.timeline-date {
+    display: block;
+    margin: 8px 0 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #f5c451;
+}
+
+.timeline-content p {
+    margin: 0;
+    font-size: 14.5px;
+    line-height: 1.7;
+    color: #9aa4b2;
+    max-width: 820px;
+    /* opcional: limita ancho para lectura */
+}
+
+.education-section {
+    margin-top: 20px;
+}

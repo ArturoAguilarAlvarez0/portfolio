@@ -1,0 +1,8 @@
+<div class="main-content">
+    <div class="panel-card">
+        <app-about *ngIf="activeSection === 'about'"></app-about>
+        <app-experience *ngIf="activeSection === 'experience'"></app-experience>
+        <app-projects *ngIf="activeSection === 'projects'"></app-projects>
+        <app-contact *ngIf="activeSection === 'contact'"></app-contact>
+    </div>
+</div>
